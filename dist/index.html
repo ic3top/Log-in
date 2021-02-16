@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tarekraafat-autocomplete.js/8.3.1/css/autoComplete.min.css">
+<link href="./style.css" rel="stylesheet"></head>
+
+<body>
+  <div class="login-page-wrapp d-flex">
+    <div class="login-form-wrap d-flex align-items-center justify-content-end">
+      <div class="form-card card">
+        <div class="tab d-felx">
+          <button class="tablink-js" data-form="reg">Registration</button>
+          <button class="tablink-js active" data-form="log-in">Log-in</button>
+        </div>
+        <div class="tabcontent-js card-body" id="log-in">
+          <h4 class="card-title">Please Login</h4>
+          <form name="loginForm">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"
+                data-required="email" data-invalid-message="Please provide valid email example@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password"
+                data-required="password" />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <!-- registration form -->
+        <div class="tabcontent-js card-body" id="reg">
+          <h4 class="card-title">Create a new account</h4>
+          <form id="regForm" name="regForm">
+            <div class="form-group">
+              <label for="regEmail">Email address</label>
+              <input type="email" class="form-control" id="regEmail" aria-describedby="emailHelp"
+                placeholder="Enter email" data-required="email"
+                data-invalid-message="Please provide valid email example@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="regPassword">Password</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <input type="checkbox" id="show" checked>
+                  </div>
+                  <span class="input-group-text">show</span>
+                </div>
+                <input type="text" class="form-control" id="regPassword" placeholder="Password" data-required="password"
+                  data-invalid-message="At least 8 characters must be provided" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select data-required="gender_orientation" class="custom-select" id="gender">
+                <option value="unset">Unset</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>            
+            <div class="form-group">
+              <label for="nickname">Nickname</label>
+              <input class="form-control" id="nickname" placeholder="Nickname" data-required="nickname" />
+            </div>
+            <div class="names d-flex justify-content-around">
+              <div class="form-group">
+                <label for="firstName">Name</label>
+                <input class="form-control" id="first_name" placeholder="Your name" data-required="first_name" data-invalid-message="At least 2 characters, first capital" />
+              </div>
+              <div class="form-group">
+                <label for="firstName">Last name</label>
+                <input class="form-control" id="last_name" placeholder="Your last name" data-required="last_name" data-invalid-message="At least 2 characters, first capital" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="firstName">Phone</label>
+              <input class="form-control" id="phone" placeholder="Your phone" data-required="phone" />
+            </div>
+            <div class="d-flex justify-content-around">
+              <div class="form-group position-relative">
+                <label for="country">Country</label>
+                <input disabled autocomplete="off" type="text" class="form-control" id="country"
+                  placeholder="Your country" data-required="country" data-invalid-message="No such country was found" />
+                <ul id="match-list-countries" class="list-group list-group-flush">
+                </ul>
+              </div>
+              <div class="form-group position-relative">
+                <label for="city">City</label>
+                <input disabled autocomplete="off" class="form-control" id="city" placeholder="Your city"
+                  data-required="city" />
+                <ul id="match-list-cities" class="list-group list-group-flush">
+                </ul>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="date">Date of birth</label>
+              <input autocomplete="off" readonly class="form-control" id="date" placeholder="Your date of birth"
+                data-required="date"/>
+            </div>
+            <button type="submit" class="inline-block btn btn-primary btn-lg">Submit</button>
+          </form>
+        </div>
+      </div>
+      <!-- /.login-form-wrap -->
+    </div>
+    <div class="login-greeting-screen d-flex align-items-center">
+      <div class="login-greeting-screen-text">
+        <h1 class="login-greeting-screen-title">Welcome to my app</h1>
+        <p class="login-greeting-screen-description">
+          Here is a simple realization of login/registration forms with ajax requests. So you can create new user using registration form, this user with all his/her data will be saved on server with POST method (if no errors occured). Than you can try log-in into this user, that you have created recently. You will be notified with toast-messages (on the left-top corner) obout errors or success.
+        </p>
+      </div>
+    </div>
+    <!-- /.login-greeting-screen -->
+  </div>
+  <!-- /.login-page-wrapp -->
+<script type="text/javascript" src="polyfill.98ce59a6be24a5fe19b9.js"></script><script type="text/javascript" src="app.98ce59a6be24a5fe19b9.js"></script></body>
+
+</html>

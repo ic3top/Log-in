@@ -1,0 +1,128 @@
+body {
+  overflow: hidden!important;
+}
+.form-card.card {
+  background-color: unset!important;
+  border: none;
+}
+.card-body {
+  background-color: #fff;
+}
+.login-page-wrapp {
+  height: 100vh;
+  background: url('../img/background/back.jpg') 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.login-form-wrap {
+  width: 50%;
+}
+
+.login-form-wrap .form-card {
+  max-width: 500px;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.login-form-wrap .form-card .card-title {
+  color: var(--gray);
+}
+
+.login-greeting-screen {
+  background-color: rgba(0, 0, 0, .5);
+  width: 50%;
+  padding: 30px;
+  position: absolute;
+  height: 100%;
+  transform: translateX(100%);
+  transition: all 1s ease-in-out;
+}
+
+.login-greeting-screen .login-greeting-screen-text {
+  max-width: 500px;
+}
+
+.login-greeting-screen .login-greeting-screen-text {
+  color: var(--white);
+}
+
+.login-greeting-screen .login-greeting-screen-title {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.login-greeting-screen .login-greeting-screen-description {
+  line-height: 1.4;
+}
+/* TABS */
+.tab button {
+  border: none;
+  border-radius: 7% 7% 0 0;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 16px;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.hidden-right {
+  transform: translateX(200%);
+}
+
+.login-form-wrap.left-side-active {
+  width: 100%!important;
+  justify-content: center!important;
+}
+/* add */
+.form-card.form-card-active {
+  max-width: 1000px;
+}
+#regForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ccc;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background: #fff;
+  outline: none;
+  cursor: unset;
+}
+
+#match-list-countries {
+  display: none;
+  position: absolute;
+  top: 69px;
+}
+
+#match-list-countries.active {
+  display: block;
+}
+
+#match-list-countries .list-group-item {
+  cursor: pointer;
+}
+#match-list-countries .list-group-item:hover {
+  background-color: var(--light);
+}
+
+#match-list-cities.active {
+  display: block;
+}
+#match-list-cities {
+  display: none;
+  position: absolute;
+  text-outline: 69px;
+}
+#match-list-cities .list-group-item {
+  cursor: pointer;
+}
+#match-list-cities .list-group-item:hover {
+  background-color: var(--light);
+}
