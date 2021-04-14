@@ -15,9 +15,9 @@ Here is a simple realization of login/registration forms with ajax requests. So 
 ![Example screenshot](./screenshots/Screenshot_reg.png)
 
 ## Technologies
-* bootstrap": ^4.3.1,
-* axios: ^0.19.0,
-* js-datepicker: ^5.18.0
+* bootstrap: 4.3.1,
+* axios: 0.19.0,
+* js-datepicker: 5.18.0
 
 ## Status
 Project is:  _finished_
