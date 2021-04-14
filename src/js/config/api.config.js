@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const API_ENV = {
   apiUrl: 'https://mlp-demo.herokuapp.com/api/public'
 };
